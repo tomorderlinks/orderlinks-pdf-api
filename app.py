@@ -27,6 +27,4 @@ async def run_file(file: UploadFile = File(...)):
 @app.get("/health")
 def health():
     return {"ok": True}
-Create a new file called **Procfile** (no extension):
-```
-web: uvicorn app:app --host 0.0.0.0 --port $PORT
+
